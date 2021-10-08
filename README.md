@@ -22,4 +22,4 @@ $ yarn generate
 ## Contact me
 
 ldy9212@gmail.com
-zaminoli@naver.com
+
