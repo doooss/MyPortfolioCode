@@ -26,7 +26,7 @@
         </v-col>        
       </v-row>
     </div>
-    <div class="main2_container blue-grey lighten-3">
+    <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row class="my-10">
           <h2>
@@ -125,17 +125,17 @@
         </v-row>        
       </v-container>
     </div>
-    <div class="main3_container "> 
+    <div class="fit_container "> 
       <v-card tile>
         <v-card-title>
           자기소개
         </v-card-title>
       </v-card>
     </div>
-    <div class="main4_container blue-grey lighten-3">
+    <div class="fit_container blue-grey lighten-3">
   
     </div>
-    <div class="main5_container">
+    <div class="fit_container">
 
     </div>
   </v-main>

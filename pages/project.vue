@@ -4,9 +4,9 @@
 
 <script>
 export default {
-  layout:'skills',
+  layout: 'project',
   mounted(){
-    this.$store.commit('changeTitle', 'Skills')    
+    this.$store.commit('changeTitle', 'Project')    
   }
 }
 </script>

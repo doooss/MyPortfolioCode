@@ -75,6 +75,11 @@
             Skills
           </v-btn>
         </nuxt-link>
+        <nuxt-link to="/project">
+          <v-btn text>
+            project
+          </v-btn>
+        </nuxt-link>
       </v-col>
       <v-col   class="d-none d-sm-flex justify-end">
         <nuxt-link to="/">
@@ -129,6 +134,11 @@ export default {
           icon: 'mdi-layers',
           title: 'Skills',
           to: '/skills'
+        },
+        {
+          icon: 'mdi-presentation',
+          title: 'Project',
+          to: '/project'
         },
         {
           icon: 'mdi-gmail',

@@ -3,7 +3,6 @@
     
   </v-main>
 </template>
-
 <script>
 export default {
   mounted(){
@@ -11,7 +10,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
