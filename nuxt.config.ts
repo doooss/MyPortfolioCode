@@ -1,8 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - port',
-    title: 'port',
+    title: '이두영의 포트폴리오 페이지 입니다.',
     htmlAttrs: {
       lang: 'ko',
     },
@@ -12,7 +11,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'sstylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap'}
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

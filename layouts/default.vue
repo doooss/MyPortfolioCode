@@ -1,16 +1,15 @@
 <template>
   <v-app>
     <v-navigation-drawer
-      v-model="drawer"
+      v-model="drawer"            
       app
     >
-      <v-list>
+      <v-list class="font-weight-medium">
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
           router
-          exact
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -20,35 +19,60 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div>
+          <v-divider></v-divider>
+          <v-list class="font-weight-medium">
+            <v-list-item 
+              href="https://github.com/ldy9212"
+            >
+              <v-list-item-action>
+                <v-icon>
+                  mdi-github
+                </v-icon>
+              </v-list-item-action>
+              
+              <v-list-item-content>
+                <v-list-item-title>
+                  GITHUB
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </div>
+      </template>
+      
     </v-navigation-drawer>
     <v-app-bar
       :clipped-left="clipped"
-      fixed
       app
       color="deep-purple darken-4"
       dark
+      elevation="0"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />     
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title >
+        {{$store.state.title}}
+      </v-toolbar-title>
       <v-spacer />
         <v-row>    
       <v-col></v-col>  
       <v-spacer/>
       <v-col  class="d-none d-md-flex my-auto justify-end" >
-        <nuxt-link to="/">
+        <nuxt-link to="/" >
           <v-btn text>
             Home
           </v-btn>
         </nuxt-link>
         
-        <nuxt-link to="/about">
+        <nuxt-link to="/about" >
           <v-btn text>
             About
           </v-btn>
         </nuxt-link>
-        <nuxt-link to="/knowledge">
+        <nuxt-link to="/skills" >
           <v-btn text>
-            Knowledge
+            Skills
           </v-btn>
         </nuxt-link>
       </v-col>
@@ -61,13 +85,13 @@
           </v-btn>  
         </nuxt-link>
         
-        <NuxtLink to="/email">
+        <nuxt-link to="/contact">
           <v-btn icon> 
             <v-icon>
               mdi-gmail
             </v-icon>
           </v-btn>
-        </NuxtLink>
+        </nuxt-link>
         
         <v-btn icon href="https://github.com/ldy9212" >
           <v-icon>
@@ -77,9 +101,9 @@
       </v-col>
     </v-row>
     </v-app-bar>
-    <v-main>
+    <transition name="mainToPage">
       <Nuxt/>
-    </v-main>
+    </transition>
   </v-app>
 </template>
 
@@ -103,15 +127,21 @@ export default {
         },
         {
           icon: 'mdi-layers',
-          title: 'Stack',
-          to: '/stacks'
-        }
+          title: 'Skills',
+          to: '/skills'
+        },
+        {
+          icon: 'mdi-gmail',
+          title: 'Contact Me',
+          to: '/contact'
+        }        
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
       title : 'Home'
     }
-  }
+  } 
+
 }
 </script>
