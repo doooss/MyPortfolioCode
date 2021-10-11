@@ -1,61 +1,61 @@
 <template>
   <v-main>
-    <v-card color="error" dark tile>
-      <v-card-title>
-        Warning
-      </v-card-title>
-      <v-card-text>
-        이 페이지의 목적은 제가 프로젝트 경험이 적기때문에, 할 수 있는 것들을 어필하기 위해 적어놓은 페이지입니다. <br/>
-        실제 제 성격은 이렇게 세부적으로 나누는 것을 좋아하진 않습니다. 
-      </v-card-text>
-    </v-card>
-    <div class="fit_container">
+    <div class="fit_container deep-purple darken-4" v-if="alert == true">
+      <v-card dark tile elevation="0" color="deep-purple darken-4">
+        <v-card-title>
+          Skills Page         
+        </v-card-title>
+        <v-card-text>
+          이 페이지는 제가 가진 개발 스킬들을 나타낸 페이지 입니다. 페이지의 구성은 해당 섹션과 그 섹션에 대해서 구글링 없이도 구현할 수 있는 영역과 / 구글링의 도움이 필요한 영역으로 나누었습니다.
+        </v-card-text>
+        <v-card-text>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false">즉시닫기</v-btn>
+        </v-card-text>
+      </v-card>
+    </div>
+    <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
-          <v-col></v-col>
-          <v-col>
-            <v-card>
-              <v-card-title>
-                HTML/CSS (Publish)
-              </v-card-title>
-            </v-card>
-          </v-col>
-          <v-col></v-col>
+          <v-card class="ma-auto" width="fit-content">
+            <v-card-title>
+              HTML/CSS/JS (Publish)
+            </v-card-title>
+          </v-card>
         </v-row>
         <v-row>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
-                해본일들 중 확실히 바로 가능한 일들
+                구글링 없이도 할 수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
-                  <v-list-item>NIKE페이지, EDIYA COFFEE, YOUTUBE 클론 경험 있습니다.</v-list-item>
-                  <v-list-item>슬라이더, 팝업, 스크롤바 등 기본 UI 다 가능합니다.</v-list-item>
-                  <v-list-item>반응형 웹, Grid, FlexBox 잘 구성가능합니다.</v-list-item>
-                  <v-list-item>각종 API를 공식문서보고 잘 연동할 수 있습니다.</v-list-item>
+                  <v-list-item>✔ 디자인이 주어진다면 그에 맞게 마크업 가능합니다. (NIKE페이지, EDIYA COFFEE, YOUTUBE 클론 경험)</v-list-item>
+                  <v-list-item>✔ 슬라이더, 팝업, 스크롤바 등 간단한 UI 들의 JS 구현이 가능합니다 </v-list-item>
+                  <v-list-item>✔ 반응형 웹, Grid, FlexBox을 충분히 이해하고 잘 활용할 수 있습니다.</v-list-item>
+                  <v-list-item>✔ 각종 API를 공식문서보고 잘 연동할 수 있습니다. (카카오맵, 카카오 주소 연동 경험)</v-list-item>                  
                 </v-list>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
-                구글링이 반드시 필요한 영역
+                구글링의 도움을 받는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
                   <v-list-item>
-                    바닐라 JS/ CSS 영역에서의 애니메이션은 잘 다루지 못합니다.
+                    ✔ 복잡한 애니메이션 영역은 구글링을 해보는 편입니다.
                   </v-list-item>
                   <v-list-item>
-                    메가메뉴를 만들때 고생했던 기억이 있습니다.
+                    ✔ SCSS/ SASS 사용시에 구글링을 해보면서 하는 편입니다.
                   </v-list-item>
                   <v-list-item>
-                    scss/sass 이해도가 떨어집니다.
+                    ✔ JQuery에 많은 시간을 소요하지 않았지만, 구글링하면서 사용 가능합니다.
                   </v-list-item>
                   <v-list-item>
-                    JQuery에 많은 시간을 소요하지 않아서 바로는 불가능하나, 구글링하면서 사용 가능합니다.
+                    ✔ 규격에 맞춘 작업을 할때는 구글링의 도움을 받습니다.
                   </v-list-item>
                 </v-list>
               </v-card-text>
@@ -64,53 +64,50 @@
         </v-row>
       </v-container>
     </div>
-    <div class="fit_container">
+    <div class="fit_container brown lighten-4">
       <v-container>
         <v-row>
-          <v-col></v-col>
-          <v-col>
-            <v-card>
-              <v-card-title>
-                Backend(node js, express, nest js)
-              </v-card-title>
-            </v-card>
-          </v-col>
-          <v-col></v-col>
+          <v-card class="ma-auto" width="fit-content">
+            <v-card-title>
+              Backend(node.js (express.js, nest.js))
+            </v-card-title>
+          </v-card>
         </v-row>
         <v-row>
           <v-col>
-            <v-card>
-              <v-card-title>
-                해본일들 중 확실히 바로 가능한 일들
+            <v-card elevation="8" xs="12" sm="6">
+              <v-card-title >
+                구글링 없이도 할 수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
-                  <v-list-item>REST API 를 어느정도 이해하고 있으며, 그 에 맞게 CRUD 구성할수 있습니다. (express, nest, spring, JSP)</v-list-item>
-                  <v-list-item>bcrypt 와 jwt 를 이용하여 사용자 로그인/회원가입을 구현할 수 있습니다. (express, nest)</v-list-item>
-                  <v-list-item>DB연동 작업을 원할히 할 수 있습니다. (MySQL, mongoDB)</v-list-item>
-                  <v-list-item>Routing 작업 원할히 할수 있습니다.</v-list-item>
-                  <v-list-item>MVC 패턴에 맞게 구성할 수 있습니다. </v-list-item>
-                  <v-list-item>Swagger Docs 배포 가능합니다. </v-list-item>
-                  <v-list-item>View Template 중 ejs, handlebars 사용 가능합니다. </v-list-item>
+                  <v-list-item>✔ REST API 를 어느정도 이해하고 있으며, 그 에 맞게 CRUD 구성할수 있습니다. </v-list-item>
+                  <v-list-item>✔ bcrypt 와 jwt 를 이용하여 사용자 로그인/회원가입을 구현할 수 있습니다. </v-list-item>
+                  <v-list-item>✔ DB연동 작업을 원할히 할 수 있습니다. ( 공식문서를 참고합니다. )</v-list-item>
+                  <v-list-item>✔ MVC 패턴에 맞게 서버를 구축할 수 있습니다. </v-list-item>
+                  <v-list-item>✔ 주로 프론트엔드 프레임워크를 이용하지만, 뷰 템플릿의 사용법을 숙지하고 있습니다. (ejs,handlebars) </v-list-item>
                 </v-list>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
-                구글링이 반드시 필요한 영역
+                구글에게 도움을 받는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
                   <v-list-item>
-                    OracleDB는 연동하다 실패한 경험이 있습니다.
+                    ✔ 프레임워크/ 라이브러리 도움없이 위 작업들을 구성해야 할때는 구글링의 도움을 받습니다.
                   </v-list-item>
                   <v-list-item>
-                    채팅 프로그램 구현에서 사용자별 소켓 프로그래밍에 실패한 경험이 있습니다.
+                    ✔ 소켓통신은 타입 변수가 많아서 구글리의 도움을 받습니다.
                   </v-list-item>
                   <v-list-item>                     
-                    pug 문법은 잘 모릅니다.
+                    ✔ 새로운 프레임워크 / 라이브러리를 사용할 경우 공식문서를 참조합니다 (or Github)
+                  </v-list-item>
+                  <v-list-item>
+                    ✔ 보안 과정을 추가로 넣는 경우
                   </v-list-item>
                 </v-list>
               </v-card-text>
@@ -119,55 +116,49 @@
         </v-row>
       </v-container>
     </div>
-    <div class="fit_container">
+    <div class="fit_container indigo lighten-4">
       <v-container>
         <v-row>
-          <v-col></v-col>
-          <v-col>
-            <v-card>
-              <v-card-title>
-                Frontend(React,Vue)
-              </v-card-title>
-            </v-card>
-          </v-col>
-          <v-col></v-col>
+          <v-card class="ma-auto" width="fit-content">
+            <v-card-title>
+              Frontend(React,Vue)
+            </v-card-title>
+          </v-card>
         </v-row>
         <v-row>
           <v-col>
-            <v-card>
-              <v-card-title>
-                해본일들 중 확실히 바로 가능한 일들
+            <v-card elevation="8">
+              <v-card-title >
+                나의 지식들
               </v-card-title>
               <v-card-text>
                 <v-list>
-                  <v-list-item>JSX/Vue 문법을 거의 다 원할히 사용 가능합니다.</v-list-item>
-                  <v-list-item>React Hooks 를 TSX 환경에서 원할히 사용 가능합니다.</v-list-item>
-                  <v-list-item>UI Framework 인 Material UI 와 Vuetify에 익숙합니다.</v-list-item>
-                  <v-list-item>SSR 프레임워크인 Nuxt 에 익숙합니다.</v-list-item>
-                  <v-list-item>react-router vue-router 모두 잘 사용합니다.</v-list-item>
-                  <v-list-item>상태 관리 라이브러리 redux, vuex 잘 사용가능합니다.</v-list-item>
+                  <v-list-item>✔ React, Vue 환경의 특수한 문법들은 대부분 숙지하고 있습니다.</v-list-item>
+                  <v-list-item>✔ React의 Functional Component 방식으로 작업합니다</v-list-item>
+                  <v-list-item>✔ Nuxt,Vuetify 작업이 원할 합니다.  </v-list-item>
+                  <v-list-item>✔ React Hooks와 그에 대응되는 Vue의 기능들을 숙지하고 있습니다.</v-list-item>
                 </v-list>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col>
-            <v-card>
-              <v-card-title>
-                구글링이 반드시 필요한 영역
+            <v-card elevation="8">
+              <v-card-title >
+                구글에게 도움을 받는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
                   <v-list-item>
-                    Vue를 TS 에서 다루는 환경은 테스트를 해 보았지만 아직 익숙하지 않습니다.
+                    ✔ UI Framework를 이용할 때 공식문서를 켜놓고 작업합니다.
                   </v-list-item>
                   <v-list-item>
-                    Next js를 시도해 본적 있으나 Nuxt만큼 익숙하진 않습니다.
+                    ✔ React 와 Vue 를 타입스크립트로 이용시 
                   </v-list-item>
                   <v-list-item>
-                    React 에서 애니메이션 다루는 것에 익숙하지 않습니다.
+                    ✔ Fetch 나 Axios 이용시에 구글링 도움을 받습니다.
                   </v-list-item>
                   <v-list-item>
-                    Apollo GraphQL 다뤄본 적이 없습니다.
+                    ✔ Redux의 경우 사용법이 항상 헷갈려서 따로 참고 페이지를 만들었습니다.(github)
                   </v-list-item>
                 </v-list>
               </v-card-text>
@@ -176,48 +167,41 @@
         </v-row>
       </v-container>
     </div>  
-    <div class="fit_container">
+    <div class="fit_container deep-purple lighten-4">
       <v-container>
         <v-row>
-          <v-col></v-col>
-          <v-col>
-            <v-card>
-              <v-card-title>
-                DBMS(MongoDB,MySQL, TypeORM)
-              </v-card-title>
-            </v-card>
-          </v-col>
-          <v-col></v-col>
+          <v-card class="ma-auto" width="fit-content">
+            <v-card-title>
+              DBMS(MongoDB,MySQL, TypeORM)
+            </v-card-title>
+          </v-card>
         </v-row>
         <v-row>
           <v-col>
-            <v-card>
-              <v-card-title>
-                해본일들 중 확실히 바로 가능한 일들
+            <v-card elevation="8">
+              <v-card-title >
+                나의 지식들
               </v-card-title>
               <v-card-text>
                 <v-list>
-                  <v-list-item>MongoDB DB생성 연동/ CRUD 쿼리문은 가능합니다.</v-list-item>
-                  <v-list-item>MYSQL DB생성 테이블생성 등등 가능합니다. </v-list-item>                  
+                  <v-list-item>✔ 기본적인 DB 생성/ 연동 / 테이블생성 / 계정생성을 할 수 있습니다.</v-list-item>
+                  <v-list-item>✔ CRUD에 맞게 사용가능 합니다. </v-list-item>                  
                 </v-list>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
-                구글링이 반드시 필요한 영역
+                구글링의 도움을 받는 영역
               </v-card-title>
               <v-card-text>
-                <v-list>
+                <v-list>                  
                   <v-list-item>
-                    DCL 영역은 많이 해보질 않아서 필요시엔 항상 구글링을 합니다.
+                    ✔ 복잡한 쿼리문을 짜는 경우 문법을 한번 더 보고, 테스트해보면서 합니다.
                   </v-list-item>
                   <v-list-item>
-                    쿼리문에 완전히 익숙하진 않아서 깃헙 문서를 만들어놓고 보면서 합니다.
-                  </v-list-item>
-                  <v-list-item>
-                    AWS 에 MySQL 호스팅을 해본 경험이 있긴 하나, 여러번 안해봐서 구글링하면서 해야합니다.
+                    ✔ AWS 에 MySQL 호스팅을 할 때, 구글의 도움을 받습니다.
                   </v-list-item>
                 </v-list>
               </v-card-text>
@@ -231,7 +215,20 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+      count : 10,
+      alert : true,
+    }
+  },
+  mounted(){
+    setInterval(()=>{
+      this.count --
+      if(this.count ==0){
+        this.alert = false
+      }
+    },1000)
+  }
 }
 </script>
 

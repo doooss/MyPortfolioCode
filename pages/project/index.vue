@@ -1,5 +1,18 @@
 <template>
   <v-main>
+    <div class="fit_container deep-purple darken-4" v-if="alert == true">
+      <v-card dark tile elevation="0" color="deep-purple darken-4">
+        <v-card-title>
+          Project Page         
+        </v-card-title>
+        <v-card-text>
+          이 페이지의 목적은 제가 해온 프로젝트를 소개하는 페이지 입니다.
+        </v-card-text>
+        <v-card-text>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false">즉시닫기</v-btn>
+        </v-card-text>
+      </v-card>
+    </div>
     <div class="skills_container">
       <v-container>
         <v-row>
@@ -84,22 +97,22 @@
                 만들어 보고 있습니다. 
               </v-card-text>
               <v-card-actions>
-                <v-btn>
+                <v-btn color="primary">
                   Typescript 
                 </v-btn>
-                <v-btn>
+                <v-btn color="teal" dark>
                   Nestjs
                 </v-btn>
-                <v-btn>
+                <v-btn color="primary" outlined>
                   Reactjs
                 </v-btn>
-                <v-btn>
+                <v-btn color="primary">
                   Mysql
                 </v-btn>
-                <v-btn>
+                <v-btn color="orange" dark>
                   typeorm
                 </v-btn>
-                <v-btn>
+                <v-btn color="primary">
                   Material UI
                 </v-btn>
               </v-card-actions>
@@ -115,8 +128,17 @@
 export default {
   data(){
     return{
-  
+      count : 10,
+      alert : true,
     }
+  },
+  mounted(){
+    setInterval(()=>{
+      this.count --
+      if(this.count ==0){
+        this.alert = false
+      }
+    },1000)
   }
 }
 </script>

@@ -24,7 +24,7 @@ a {
 .fit_container {
   width: 100%;
   height: fit-content;
-  padding-bottom: 30px;
+  padding: 40px 0;
 }
 
 .main1_title {
@@ -48,22 +48,4 @@ a {
     height: fit-content;
     padding-bottom: 20px;
   }
-}
-
-.mainToPage-enter-active,
-.mainToPage-leave-active {
-  transition: opacity 0.5s;
-}
-.mainToPage-enter, .mainToPage-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-.fadeOut-leave-from {
-  opacity: 1;
-}
-
-.fadeOut-leave-active {
-  transition: 0.5s;
-}
-.fadeOut-leave-to {
-  opacity: 0;
 }
