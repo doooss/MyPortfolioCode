@@ -26,7 +26,7 @@
         </v-col>        
       </v-row>
     </div>
-    <div class="fit_container blue-grey lighten-3">
+    <article class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row class="my-10">
           <v-spacer></v-spacer>
@@ -128,50 +128,90 @@
           </div> 
         </v-row>        
       </v-container>
-    </div>
-    <div class="fit_container teal lighten-5"> 
+    </article>
+    <article class="fit_container teal lighten-5"> 
+      <v-container>
+        <v-row>
+          <v-col cols="auto" md="6">
+            <div class="flex_wh100 ma-auto ">
+              <h2 class="ma-auto">저는 이런 개발자 입니다.</h2>
+            </div>
+          </v-col>
+          <v-col  cols="auto" md="6">
+            <v-list color="transparent">
+              <v-list-item>✔ 기본에 집중하는 경향을 가지고 있습니다.</v-list-item>
+              <v-list-item>✔ 새로운 것을 익히는 것을 좋아합니다.</v-list-item>
+              <v-list-item>✔ 핵심적인 일을 파악하고 먼저하는 습관을 가지고 있습니다.</v-list-item>
+              <v-list-item>✔ 전체적인 구조를 우선적으로 보는 능력을 가지고 있습니다.</v-list-item>
+              <v-list-item>✔ 한 문제에 대해서 다른 시각으로 볼 수 있는 능력이 있습니다.</v-list-item>
+              <v-list-item>✔ 항상 사용자의 입장에서 개발을 진행하고 있습니다.</v-list-item>
+            </v-list>
+            <div class="main_btn_3">
+              <nuxt-link to="/about">
+              <v-btn color="cyan darken-4" dark>
+                자세히 보기
+                <v-icon right>
+                  mdi-chevron-right
+                </v-icon>
+              </v-btn>
+              </nuxt-link>
+            </div>
+          </v-col>        
+        </v-row>
+          
+        <v-row class="mt-10">
+          <div class="mx-auto">
+                  
+          </div> 
+        </v-row>        
+      </v-container>      
+    </article>
+    <article class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
           <v-spacer></v-spacer>
           <v-card  color="transparent" flat>
-            <v-card-title class="text-h4">
-              <b>About Me</b>
+            <v-card-title class="text-h5">
+              <b>진행해온 프로젝트들</b>
             </v-card-title>
           </v-card>
           <v-spacer></v-spacer>
         </v-row>
-        <v-row>
-         
-          <v-card class="mx-auto mb-20">
+        <v-row>  
+          <v-col>
+            <v-card width="480" class="mx-auto">
+              <v-img
+              src="https://lh3.googleusercontent.com/pw/AM-JKLU8aZ-cOVzNYlrTyN2kme9ulyX_sNE7nNJdjG1sQDkfLrADQpT_hqtCqh9d7mjINVl0uIpLkgF7bg4fGj_GtaDU58rnErEzqBRlLsR5sZxy7zxNPs80G9LZQCp4VNahcRHf0gTozQhQx6UfNia3PEYL=w1880-h928-no?authuser=0"
+              alt="chatting App Swagger Docs"
+              width="480"
+              height="270"
+              />              
+              <v-card-title>
+                Chatting App 
+              </v-card-title>
+              <v-card-subtitle>
+                소켓프로그래밍을 시도해본 프로젝트
+              </v-card-subtitle>  
+            </v-card>  
+          </v-col>   
+          <v-col> 
+          <v-card width="480" class="mx-auto">
+            <v-img
+            src="https://lh3.googleusercontent.com/pw/AM-JKLXoVS5mK_ybryQnXzQtG3KO-52mm6bJj_3ibR0SrZ_isH7pvUZjAYzJEeWdTGfaiznLc7ZlzIkAjUnalQ9q4_KAn55MtgTqXw88nuYDHVaL2-f8BVxpFuMRNpeWDqdIegTgXV1KrnI0aWArde0JsUuc=w1920-h960-no?authuser=0"
+            alt="react ts tutorial img"
+            width="480"
+            height="270"
+            />
             <v-card-title>
-              저는 이런 사람입니다.
+              리액트 Tutorial site
             </v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-list>
-                <v-list-item>
-                  <v-list-item-content>새로운 것은 익히는 것을 좋아합니다.</v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content>기본에 집중하는 경향을 가지고 있습니다.</v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content>핵심적인 일을 파악하고 먼저하는 습관을 가지고 있습니다.</v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content></v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content></v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content></v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-card-text>
-          </v-card>        
+            <v-card-subtitle>
+              리액트를 Hooks 실습 프로젝트
+            </v-card-subtitle>
+          </v-card>
+          </v-col>        
         </v-row>
-        <v-row>
+        <v-row class="mt-10">
           <div class="mx-auto">
             <nuxt-link to="/about">
               <v-btn color="cyan darken-4" dark>
@@ -183,15 +223,16 @@
             </nuxt-link>         
           </div> 
         </v-row>        
-      </v-container>
-      
-    </div>
-    <div class="fit_container blue-grey lighten-3">
-  
-    </div>
-    <div class="fit_container">
-
-    </div>
+      </v-container>  
+    </article>
+    <article class="fit_container grey darken-4">
+      <div class="main_contact">
+        <h1 class="mt-3 mb-10">연락처</h1>
+        <h3>Email : ldy9212@gmail.com</h3>
+        <h3>Github : https://github.com/ldy9212 </h3>
+        <h3>Tel : (+82) 010-9002-1193</h3>
+      </div> 
+    </article>
   </v-main>
 </template>
 

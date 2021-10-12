@@ -53,3 +53,19 @@ a {
 .contact_page {
   text-align: center;
 }
+
+.flex_wh100 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main_btn_3 {
+  text-align: center;
+  margin-top: 20px;
+}
+.main_contact {
+  text-align: center;
+  align-items: center;
+  color: whitesmoke;
+}

@@ -129,7 +129,7 @@
           <v-col>
             <v-card elevation="10" rounded="lg">
               <v-card-title >
-                구글링 없이도 핧수 있는 영역
+                구글링 없이도 할 수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
@@ -180,7 +180,7 @@
           <v-col>
             <v-card elevation="10" rounded="lg">
               <v-card-title >
-                구글링 없이도 할수 있는 영역
+                구글링 없이도 할 수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
@@ -202,6 +202,53 @@
                   </v-list-item>
                   <v-list-item>
                     ✔ AWS 에 MySQL 호스팅을 할 때, 구글의 도움을 받습니다.
+                  </v-list-item>
+                </v-list>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>  
+        <div class="fit_container blue-grey lighten-3">
+      <v-container>
+        <v-row>
+          <v-card class="ma-auto" width="fit-content">
+            <v-card-title>
+              Programming language( JS, TS)  
+            </v-card-title>
+          </v-card>
+        </v-row>
+        <v-row>
+          <v-col>
+            <v-card elevation="10" rounded="lg">
+              <v-card-title >
+                Javascript
+              </v-card-title>
+              <v-card-text>
+                <v-list>
+                  <v-list-item>👍 최신 자바스크립트 ES2021 까지 추가된 내용들을 숙지하고 잘 이용합니다. </v-list-item>
+                  <v-list-item>👍 알고리즘의 수준은 프로그래머스 레벨 2단계 문제를 모두 푸는 정도입니다.</v-list-item>
+                  <v-list-item>👍 babel,ESlint, Prettier의 역할을 알고 있으며 항상 이용하고 있습니다. </v-list-item>                  
+                </v-list>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col>
+            <v-card elevation="10" rounded="lg">
+              <v-card-title >
+                Typescript
+              </v-card-title>
+              <v-card-text>
+                <v-list>
+                  <v-list-item>
+                    👍 현재 모든 프로젝트를 타입스크립트로 작업하고 있습니다.(React.TSX, Vue.Ts, Nest.Js)
+                  </v-list-item>
+                  <v-list-item>
+                    👍 만약 설치한 라이브러리에 typescript declare 파일이 없더라도 직접 제작하여 작업할수 있습니다.
+                  </v-list-item>           
+                  <v-list-item>
+                    👎 순수 HTML/CSS/JS  환경의 정적 웹 환경에선 타입스크립트를 다뤄본 경험이 없습니다.
                   </v-list-item>
                 </v-list>
               </v-card-text>
