@@ -9,7 +9,7 @@
           이 페이지의 목적은 제가 해온 프로젝트를 소개하는 페이지 입니다.
         </v-card-text>
         <v-card-text>
-          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false">즉시닫기</v-btn>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false" color="transparent" elevation="0">즉시닫기</v-btn>
         </v-card-text>
       </v-card>
     </div>

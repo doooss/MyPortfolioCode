@@ -29,9 +29,13 @@
     <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row class="my-10">
-          <h2>
-            Skills Summary
-          </h2>
+          <v-spacer></v-spacer>
+          <v-card color="transparent" flat>
+            <v-card-title class="text-h4">
+             <b> SKILLS SUMMARY </b>
+            </v-card-title>
+          </v-card>
+          <v-spacer></v-spacer>
         </v-row>
         <v-row class="my-10">          
           <v-col sm="6" md="3" xl="2" class="mx-auto">
@@ -125,12 +129,62 @@
         </v-row>        
       </v-container>
     </div>
-    <div class="fit_container "> 
-      <v-card tile>
-        <v-card-title>
-          자기소개
-        </v-card-title>
-      </v-card>
+    <div class="fit_container teal lighten-5"> 
+      <v-container>
+        <v-row>
+          <v-spacer></v-spacer>
+          <v-card  color="transparent" flat>
+            <v-card-title class="text-h4">
+              <b>About Me</b>
+            </v-card-title>
+          </v-card>
+          <v-spacer></v-spacer>
+        </v-row>
+        <v-row>
+         
+          <v-card class="mx-auto mb-20">
+            <v-card-title>
+              저는 이런 사람입니다.
+            </v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <v-list>
+                <v-list-item>
+                  <v-list-item-content>새로운 것은 익히는 것을 좋아합니다.</v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>기본에 집중하는 경향을 가지고 있습니다.</v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>핵심적인 일을 파악하고 먼저하는 습관을 가지고 있습니다.</v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content></v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content></v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content></v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
+          </v-card>        
+        </v-row>
+        <v-row>
+          <div class="mx-auto">
+            <nuxt-link to="/about">
+              <v-btn color="cyan darken-4" dark>
+                자세히 보기
+                <v-icon right>
+                  mdi-chevron-right
+                </v-icon>
+              </v-btn>
+            </nuxt-link>         
+          </div> 
+        </v-row>        
+      </v-container>
+      
     </div>
     <div class="fit_container blue-grey lighten-3">
   

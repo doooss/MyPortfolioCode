@@ -9,7 +9,7 @@
           이 페이지는 제가 가진 개발 스킬들을 나타낸 페이지 입니다. 페이지의 구성은 해당 섹션과 그 섹션에 대해서 구글링 없이도 구현할 수 있는 영역과 / 구글링의 도움이 필요한 영역으로 나누었습니다.
         </v-card-text>
         <v-card-text>
-          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false">즉시닫기</v-btn>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false" color="transparent" elevation="0">즉시닫기</v-btn>
         </v-card-text>
       </v-card>
     </div>
@@ -24,7 +24,7 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title>
                 구글링 없이도 할 수 있는 영역
               </v-card-title>
@@ -39,7 +39,7 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title>
                 구글링의 도움을 받는 영역
               </v-card-title>
@@ -67,7 +67,7 @@
     <div class="fit_container brown lighten-4">
       <v-container>
         <v-row>
-          <v-card class="ma-auto" width="fit-content">
+          <v-card class="ma-auto" width="fit-content" >
             <v-card-title>
               Backend(node.js (express.js, nest.js))
             </v-card-title>
@@ -75,7 +75,7 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-card elevation="8" xs="12" sm="6">
+            <v-card elevation="10" rounded="lg">
               <v-card-title >
                 구글링 없이도 할 수 있는 영역
               </v-card-title>
@@ -91,7 +91,7 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title>
                 구글에게 도움을 받는 영역
               </v-card-title>
@@ -116,7 +116,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="fit_container indigo lighten-4">
+    <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
           <v-card class="ma-auto" width="fit-content">
@@ -127,9 +127,9 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title >
-                나의 지식들
+                구글링 없이도 핧수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
@@ -142,7 +142,7 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title >
                 구글에게 도움을 받는 영역
               </v-card-title>
@@ -152,7 +152,7 @@
                     ✔ UI Framework를 이용할 때 공식문서를 켜놓고 작업합니다.
                   </v-list-item>
                   <v-list-item>
-                    ✔ React 와 Vue 를 타입스크립트로 이용시 
+                    ✔ React 와 Vue 를 타입스크립트로 설정시 에러 방지를 위해 도움을 받습니다.
                   </v-list-item>
                   <v-list-item>
                     ✔ Fetch 나 Axios 이용시에 구글링 도움을 받습니다.
@@ -167,7 +167,7 @@
         </v-row>
       </v-container>
     </div>  
-    <div class="fit_container deep-purple lighten-4">
+    <div class="fit_container brown lighten-4">
       <v-container>
         <v-row>
           <v-card class="ma-auto" width="fit-content">
@@ -178,9 +178,9 @@
         </v-row>
         <v-row>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title >
-                나의 지식들
+                구글링 없이도 할수 있는 영역
               </v-card-title>
               <v-card-text>
                 <v-list>
@@ -191,7 +191,7 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card elevation="8">
+            <v-card elevation="10" rounded="lg">
               <v-card-title>
                 구글링의 도움을 받는 영역
               </v-card-title>
