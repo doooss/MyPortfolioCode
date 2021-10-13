@@ -88,15 +88,8 @@
               mdi-home
             </v-icon>
           </v-btn>  
-        </nuxt-link>
-        
-        <nuxt-link to="/contact">
-          <v-btn icon> 
-            <v-icon>
-              mdi-gmail
-            </v-icon>
-          </v-btn>
-        </nuxt-link>
+        </nuxt-link>  
+ 
         
         <v-btn icon href="https://github.com/ldy9212" >
           <v-icon>
@@ -109,6 +102,19 @@
     <transition name="mainToPage">
       <Nuxt/>
     </transition>
+    <v-footer class="fit_container grey darken-4 " padless> 
+      <v-card flat tile class="whilte--text mx-auto grey darken-4" dark >
+        <v-card-title >
+          Contact Me
+        </v-card-title>
+        <v-divider></v-divider>
+        <v-card-text>
+          Email : ldy9212@gmail.com<br/>
+          Github : https://github.com/ldy9212<br/>
+          Tel : (+82) 010-9002-1193
+        </v-card-text>
+        </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -139,16 +145,8 @@ export default {
           icon: 'mdi-presentation',
           title: 'Project',
           to: '/project'
-        },
-        {
-          icon: 'mdi-gmail',
-          title: 'Contact Me',
-          to: '/contact'
-        }        
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
+        }   
+      ],    
       title : 'Home'
     }
   } 

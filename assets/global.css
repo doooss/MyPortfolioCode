@@ -69,3 +69,9 @@ a {
   align-items: center;
   color: whitesmoke;
 }
+
+.project_container {
+  width: 100%;
+  height: fit-content;
+  padding: 60px 0;
+}

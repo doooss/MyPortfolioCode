@@ -16,8 +16,7 @@
     <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
-          <v-col>
-          </v-col>
+          <v-col/>
           <v-col>
             <v-card>
               <v-card-title>
@@ -48,17 +47,14 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col>
-          </v-col>
+          <v-col/>
         </v-row>
       </v-container>
     </div>
     <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
-          <v-col>
-            
-          </v-col>
+          <v-col/>
           <v-col>
             <v-card>
               <v-card-title>
@@ -87,18 +83,14 @@
               </v-card-text>
             </v-card>            
           </v-col>
-          <v-col>
-
-          </v-col>
+          <v-col/>
         </v-row>
       </v-container>
     </div>
     <div class="fit_container blue-grey lighten-3">
       <v-container>
         <v-row>
-          <v-col>
-            
-          </v-col>
+          <v-col/>            
           <v-col>
             <v-card>
               <v-card-title>
@@ -126,14 +118,9 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col>
-            
-          </v-col>
+          <v-col/>            
         </v-row>
       </v-container>
-    </div>
-    <div>
-      
     </div>
   </v-main>
 </template>

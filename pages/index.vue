@@ -225,14 +225,6 @@
         </v-row>        
       </v-container>  
     </article>
-    <article class="fit_container grey darken-4">
-      <div class="main_contact">
-        <h1 class="mt-3 mb-10">연락처</h1>
-        <h3>Email : ldy9212@gmail.com</h3>
-        <h3>Github : https://github.com/ldy9212 </h3>
-        <h3>Tel : (+82) 010-9002-1193</h3>
-      </div> 
-    </article>
   </v-main>
 </template>
 

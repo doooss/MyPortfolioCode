@@ -13,14 +13,21 @@
         </v-card-text>
       </v-card>
     </div>
-    <div class="skills_container">
+    <div class="project_container brown lighten-4">
       <v-container>
-        <v-row>
+        <v-row class="align-center">
           <v-col>
-
+            <v-card width="480"  elevation="12" class="mx-auto" href="https://github.com/ldy9212/NestChat">
+              <v-img
+                src="https://lh3.googleusercontent.com/pw/AM-JKLU8aZ-cOVzNYlrTyN2kme9ulyX_sNE7nNJdjG1sQDkfLrADQpT_hqtCqh9d7mjINVl0uIpLkgF7bg4fGj_GtaDU58rnErEzqBRlLsR5sZxy7zxNPs80G9LZQCp4VNahcRHf0gTozQhQx6UfNia3PEYL=w1880-h928-no?authuser=0"
+                alt="chatting App Swagger Docs"
+                width="480"
+                height="270"
+              />    
+            </v-card>
           </v-col>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
                 Chatting App Project
               </v-card-title>
@@ -37,12 +44,9 @@
               <v-card-actions>
                 <v-btn color="primary" dark>Typescript</v-btn>
                 <v-btn dark>NestJS</v-btn>
-                <v-btn color="teal" dark>NuxtJs</v-btn>
-                <v-btn color="primary" dark>vuetify</v-btn>
+                <v-btn color="teal" dark>NuxtJs</v-btn>             
                 <v-btn color="green" dark>MongoDB</v-btn>
-                <v-btn color="green" dark>mongoose</v-btn>
-                <v-btn color="blue-grey darken-2" dark>AWS</v-btn>
-                <v-btn color="teal" dark>Swagger</v-btn>
+               
               </v-card-actions>
             </v-card>
           </v-col>
@@ -50,11 +54,21 @@
       </v-container>
     </div>
 
-    <div class="skills_container ">
+    <div class="project_container brown lighten-4">
       <v-container>
-        <v-row>
+        <v-row class="align-center">
           <v-col>
-            <v-card>
+            <v-card class="mx-auto" width="480" elevation="12" href="https://github.com/ldy9212/reacttsstudy">
+              <v-img
+                src="https://lh3.googleusercontent.com/pw/AM-JKLXoVS5mK_ybryQnXzQtG3KO-52mm6bJj_3ibR0SrZ_isH7pvUZjAYzJEeWdTGfaiznLc7ZlzIkAjUnalQ9q4_KAn55MtgTqXw88nuYDHVaL2-f8BVxpFuMRNpeWDqdIegTgXV1KrnI0aWArde0JsUuc=w1920-h960-no?authuser=0"
+                alt="react ts tutorial img"
+                width="480"
+                height="270"                
+              />
+            </v-card>
+          </v-col>
+          <v-col>
+            <v-card elevation="8" >
               <v-card-title>
                 React TSX Tutorial
               </v-card-title>
@@ -71,21 +85,23 @@
                 <v-btn color="purple darken-4" dark>Redux</v-btn>
                 <v-btn color="primary" dark>Material UI</v-btn>
               </v-card-actions>
-            </v-card>
-           
-          </v-col>
-          <v-col>
-
+            </v-card>           
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <div class="skills_container">
+    <div class="project_container brown lighten-4">
       <v-container>
         <v-row>
-          <v-col></v-col>
+          <v-col >
+            <v-card class="" color="transparent" elevation="0" href="https://github.com/ldy9212/KioskBackend/">
+              <v-card-title class="">
+                
+              </v-card-title>
+            </v-card>
+          </v-col>
           <v-col>
-            <v-card>
+            <v-card elevation="8">
               <v-card-title>
                 Kiosk
               </v-card-title>
@@ -111,9 +127,6 @@
                 </v-btn>
                 <v-btn color="orange" dark>
                   typeorm
-                </v-btn>
-                <v-btn color="primary">
-                  Material UI
                 </v-btn>
               </v-card-actions>
             </v-card>
