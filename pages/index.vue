@@ -213,7 +213,7 @@
         </v-row>
         <v-row class="mt-10">
           <div class="mx-auto">
-            <nuxt-link to="/about">
+            <nuxt-link to="/project">
               <v-btn color="cyan darken-4" dark>
                 자세히 보기
                 <v-icon right>
