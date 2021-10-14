@@ -17,7 +17,7 @@
       <v-container>
         <v-row class="align-center">
           <v-col>
-            <v-card width="480"  elevation="12" class="mx-auto" href="https://github.com/ldy9212/NestChat">
+            <v-card width="480"  elevation="12" class="mx-auto">
               <v-img
                 src="https://lh3.googleusercontent.com/pw/AM-JKLU8aZ-cOVzNYlrTyN2kme9ulyX_sNE7nNJdjG1sQDkfLrADQpT_hqtCqh9d7mjINVl0uIpLkgF7bg4fGj_GtaDU58rnErEzqBRlLsR5sZxy7zxNPs80G9LZQCp4VNahcRHf0gTozQhQx6UfNia3PEYL=w1880-h928-no?authuser=0"
                 alt="chatting App Swagger Docs"
