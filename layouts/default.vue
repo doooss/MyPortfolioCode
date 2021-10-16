@@ -103,8 +103,8 @@
       <Nuxt/>
     </transition>
     <v-footer class="fit_container grey darken-4 " padless> 
-      <v-card flat tile class="whilte--text mx-auto grey darken-4" dark >
-        <v-card-title >
+      <v-card flat tile class="white--text mx-auto grey darken-4 text-center" dark >
+        <v-card-title class="justify-center">
           Contact Me
         </v-card-title>
         <v-divider></v-divider>
@@ -112,7 +112,7 @@
           Email : ldy9212@gmail.com<br/>
           Github : https://github.com/ldy9212<br/>
           Tel : (+82) 010-9002-1193<br/>
-          이 포트폴리오의 코드는 https://github.com/ldy9212/MyPortfolioCode 에 공개되어있습니다. <br/>
+          이 포트폴리오의 코드는 <a class="white--text" href="https://github.com/ldy9212/MyPortfolioCode">https://github.com/ldy9212/MyPortfolioCode </a> 에 공개되어있습니다. <br/>
         </v-card-text>
         </v-card>
     </v-footer>
