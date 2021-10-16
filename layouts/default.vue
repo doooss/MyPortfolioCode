@@ -111,7 +111,8 @@
         <v-card-text>
           Email : ldy9212@gmail.com<br/>
           Github : https://github.com/ldy9212<br/>
-          Tel : (+82) 010-9002-1193
+          Tel : (+82) 010-9002-1193<br/>
+          이 포트폴리오의 코드는 https://github.com/ldy9212/MyPortfolioCode 에 공개되어있습니다. <br/>
         </v-card-text>
         </v-card>
     </v-footer>
