@@ -1,0 +1,46 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_6a93c9a8"
+  },
+  {
+    "path": "/project",
+    "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\project.vue",
+    "chunkName": "pages/project",
+    "children": [
+      {
+        "name": "project",
+        "path": "",
+        "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\project\\\\index.vue",
+        "chunkName": "pages/project/index",
+        "_name": "_14f5368a"
+      }
+    ],
+    "_name": "_84b85210"
+  },
+  {
+    "path": "/skills",
+    "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\skills.vue",
+    "chunkName": "pages/skills",
+    "children": [
+      {
+        "name": "skills",
+        "path": "",
+        "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\skills\\\\index.vue",
+        "chunkName": "pages/skills/index",
+        "_name": "_28fef422"
+      }
+    ],
+    "_name": "_cb76419a"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\home\\\\Desktop\\\\DY\\\\workspace\\\\202111\\\\nuxt\\\\MyPortfolioCode\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2b24141e"
+  }
+]
