@@ -196,17 +196,17 @@
           </v-col>   
           <v-col> 
           <v-card width="480" class="mx-auto">
-            <v-img
-            src="https://lh3.googleusercontent.com/pw/AM-JKLXoVS5mK_ybryQnXzQtG3KO-52mm6bJj_3ibR0SrZ_isH7pvUZjAYzJEeWdTGfaiznLc7ZlzIkAjUnalQ9q4_KAn55MtgTqXw88nuYDHVaL2-f8BVxpFuMRNpeWDqdIegTgXV1KrnI0aWArde0JsUuc=w1920-h960-no?authuser=0"
-            alt="react ts tutorial img"
-            width="480"
-            height="270"
-            />
+              <v-img
+                src="https://lh3.googleusercontent.com/pw/AM-JKLXq1Kcdt-u21XxyW2GQAh_PTK5QpcoBJksJzGnIqeQcfvrERsNqxgo2bMMr7oZdVnVAl6FnPrLn6zP3joWd7S1l6Ww2Sv77jciQN2Sy_ngxi-s8d3wiYSS1h5FLp6zGrifacz0kRVUW4RSlUdwwDm9r=w1920-h969-no?authuser=0"
+                alt="kiosk project img"
+                width="480"
+                height="270"  
+              />
             <v-card-title>
-              리액트 Tutorial site
+              Kiosk App 
             </v-card-title>
             <v-card-subtitle>
-              리액트를 Hooks 실습 프로젝트
+              Web으로 간이 Kiosk를 구연해보는 프로젝트
             </v-card-subtitle>
           </v-card>
           </v-col>        
@@ -290,13 +290,13 @@ export default {
       ]
     }
   },
+  mounted(){
+    this.$store.commit('changeTitle', 'Home')    
+  },
   methods:{
     changeTitle(param){
       this.$store.commit('changeTitle', param)
     }
-  },
-  mounted(){
-    this.$store.commit('changeTitle', 'Home')    
   }
 }
 </script>

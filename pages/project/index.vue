@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <div class="fit_container deep-purple darken-4" v-if="alert == true">
+    <div  v-if="alert == true" class="fit_container deep-purple darken-4">
       <v-card dark tile elevation="0" color="deep-purple darken-4">
         <v-card-title>
           Project Page         
@@ -9,7 +9,7 @@
           이 페이지의 목적은 제가 해온 프로젝트를 소개하는 페이지 입니다.
         </v-card-text>
         <v-card-text>
-          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false" color="transparent" elevation="0">즉시닫기</v-btn>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn color="transparent" elevation="0" @click="alert = false" >즉시닫기</v-btn>
         </v-card-text>
       </v-card>
     </div>
@@ -29,7 +29,7 @@
           <v-col>
             <v-card elevation="8">
               <v-card-title>
-                Chatting App Project
+                Chatting App Project - 중단 - 실패
               </v-card-title>
               <v-card-subtitle>
                 Socket 프로그래밍의 입문 , 제가 최초로 백엔드와 프론트엔드를 분리하여 제작한 프로젝트
@@ -92,12 +92,15 @@
     </div>
     <div class="project_container brown lighten-4">
       <v-container>
-        <v-row>
-          <v-col >
-            <v-card class="" color="transparent" elevation="0" href="https://github.com/ldy9212/KioskBackend/">
-              <v-card-title class="">
-                
-              </v-card-title>
+        <v-row class="align-center">
+          <v-col>
+            <v-card class="mx-auto" width="480" elevation="12" href="https://github.com/ldy9212/kioskf/">
+              <v-img
+                src="https://lh3.googleusercontent.com/pw/AM-JKLXq1Kcdt-u21XxyW2GQAh_PTK5QpcoBJksJzGnIqeQcfvrERsNqxgo2bMMr7oZdVnVAl6FnPrLn6zP3joWd7S1l6Ww2Sv77jciQN2Sy_ngxi-s8d3wiYSS1h5FLp6zGrifacz0kRVUW4RSlUdwwDm9r=w1920-h969-no?authuser=0"
+                alt="kiosk project img"
+                width="480"
+                height="270"  
+              />
             </v-card>
           </v-col>
           <v-col>
@@ -117,10 +120,10 @@
                   Typescript 
                 </v-btn>
                 <v-btn color="teal" dark>
-                  Nestjs
+                  Nest.js
                 </v-btn>
                 <v-btn color="primary" outlined>
-                  Reactjs
+                  Next.js
                 </v-btn>
                 <v-btn color="primary">
                   Mysql
@@ -148,7 +151,7 @@ export default {
   mounted(){
     setInterval(()=>{
       this.count --
-      if(this.count ==0){
+      if(this.count ===0){
         this.alert = false
       }
     },1000)

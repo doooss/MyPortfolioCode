@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <div class="fit_container deep-purple darken-4" v-if="alert == true">
+    <div v-if="alert == true" class="fit_container deep-purple darken-4" >
       <v-card dark tile elevation="0" color="deep-purple darken-4">
         <v-card-title>
           About Page         
@@ -9,7 +9,7 @@
           이 페이지의 목적은 성격을 알려드리는 페이지 입니다.
         </v-card-text>
         <v-card-text>
-          설명란은 {{count}} 초 이후에 사라집니다. <v-btn @click="alert = false" color="transparent" elevation="0">즉시닫기</v-btn>
+          설명란은 {{count}} 초 이후에 사라집니다. <v-btn color="transparent" elevation="0" @click="alert = false" >즉시닫기</v-btn>
         </v-card-text>
       </v-card>
     </div>
@@ -140,7 +140,7 @@ export default {
     this.$store.commit('changeTitle', 'About');
     setInterval(()=>{
       this.count --
-      if(this.count ==0){
+      if(this.count ===0){
         this.alert = false
       }
     },1000)    
