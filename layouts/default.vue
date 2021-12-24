@@ -19,7 +19,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <template v-slot:append>
+      <template #append>
         <div>
           <v-divider></v-divider>
           <v-list class="font-weight-medium">
@@ -63,13 +63,8 @@
           <v-btn text>
             Home
           </v-btn>
-        </nuxt-link>
-        
-        <nuxt-link to="/about" >
-          <v-btn text>
-            About
-          </v-btn>
-        </nuxt-link>
+        </nuxt-link>      
+
         <nuxt-link to="/skills" >
           <v-btn text>
             Skills
@@ -131,11 +126,6 @@ export default {
           icon: 'mdi-home',
           title: 'Home',
           to: '/'
-        },
-        {
-          icon: 'mdi-account',
-          title: 'About Me',
-          to: '/about'
         },
         {
           icon: 'mdi-layers',

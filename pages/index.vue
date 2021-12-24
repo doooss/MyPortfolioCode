@@ -145,17 +145,7 @@
               <v-list-item>✔ 전체적인 구조를 우선적으로 보는 능력을 가지고 있습니다.</v-list-item>
               <v-list-item>✔ 한 문제에 대해서 다른 시각으로 볼 수 있는 능력이 있습니다.</v-list-item>
               <v-list-item>✔ 항상 사용자의 입장에서 개발을 진행하고 있습니다.</v-list-item>
-            </v-list>
-            <div class="main_btn_3">
-              <nuxt-link to="/about">
-              <v-btn color="cyan darken-4" dark>
-                자세히 보기
-                <v-icon right>
-                  mdi-chevron-right
-                </v-icon>
-              </v-btn>
-              </nuxt-link>
-            </div>
+            </v-list> 
           </v-col>        
         </v-row>
           
