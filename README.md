@@ -1,6 +1,6 @@
 # 포트폴리오
 
-<a href="https://ldy9212.github.io/MyPortfolioCode/">링크</a>
+[링크](https://ldy9212.github.io/MyPortfolioCode/)
 
 Nuxt js 로 빌드된 제 포트폴리오 코드 입니다.
 
