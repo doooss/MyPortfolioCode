@@ -1,5 +1,7 @@
 # 포트폴리오
 
+<a href="https://ldy9212.github.io/MyPortfolioCode/">링크</a>
+
 Nuxt js 로 빌드된 제 포트폴리오 코드 입니다.
 
 yarn 으로 빌드 된 버전으로 npm 에선 보안 이슈가 발견되긴 합니다만. 현재 앱에선 그런 이슈가 중요하지 않아서 무시하시고 사용하셔도 됩니다.
