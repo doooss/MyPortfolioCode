@@ -1,0 +1,77 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  align-content: center;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  unicode-range: U+AC00- U+D7A3;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap');
+}
+
+.main1_title {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.main1_container {
+  width: 100%;
+  height: 400px;
+}
+.fit_container {
+  width: 100%;
+  height: fit-content;
+  padding: 40px 0;
+}
+
+.main1_title {
+  font-weight: 700;
+  display: flex;
+  white-space: nowrap;
+}
+.main1_title_1 {
+  font-size: 36px;
+}
+
+.main1_title_2 {
+  font-size: 24px;
+}
+.main2_card {
+  height: 600px;
+}
+
+@media screen and (max-width: 600px) {
+  .main2_card {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+}
+
+.contact_page {
+  text-align: center;
+}
+
+.flex_wh100 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main_btn_3 {
+  text-align: center;
+  margin-top: 20px;
+}
+.main_contact {
+  text-align: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.project_container {
+  width: 100%;
+  height: fit-content;
+  padding: 60px 0;
+}

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{389:function(t,n,e){"use strict";e.r(n);var l={layout:"skills",mounted:function(){this.$store.commit("changeTitle","Skills")}},o=e(85),component=Object(o.a)(l,(function(){var t=this.$createElement;return(this._self._c||t)("Nuxt")}),[],!1,null,null,null);n.default=component.exports}}]);
